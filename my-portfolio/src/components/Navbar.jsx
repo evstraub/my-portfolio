@@ -1,9 +1,10 @@
 import '../App.css'
 import '../reset.css'
-import {FaBars, FaTimes} from 'react-icons/fa'
+import {FaBars, FaGithub, FaLinkedin} from 'react-icons/fa'
 import { useState } from 'react'
 import Modal from './Modal'
-
+import {HiOutlineMail} from 'react-icons/hi'
+import {BsFillPersonLinesFill} from 'react-icons/bs'
 
 const Navbar = () => {
     const [nav, setNav] =useState(false)
@@ -23,12 +24,34 @@ const Navbar = () => {
       {/* Hamburger */}
       <div onClick={handleClick} className="hamburger">
         <FaBars />
-        { nav && <Modal closeNav={setNav}/>}
+        {nav && <Modal closeNav={setNav} />}
       </div>
 
-     
-      {/* social icons */}
-      <div className="soc-icons"></div>
+      
+      <div className="soc-icons">
+        <ul>
+          <li className="soc-li">
+            <a href="/">
+              LinkedIn<FaLinkedin size={30} />
+            </a>
+          </li>
+          <li className="soc-li">
+            <a href="/">
+             Github <FaGithub size={30} />
+            </a>
+          </li>
+          <li className="soc-li">
+            <a href="/">
+             resume <BsFillPersonLinesFill size={30}  />
+            </a>
+          </li>
+          <li className="soc-li">
+            <a href="/">
+             Contact <HiOutlineMail size={30} />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

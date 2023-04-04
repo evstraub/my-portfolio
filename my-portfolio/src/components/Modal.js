@@ -6,9 +6,9 @@ const Modal = ({closeNav}) => {
       {/* mobile menu */}
 
       <ul className="mobile">
-        <close className="closeBtn" onClick={() => closeNav(false)}>
+        <div className="closeBtn" onClick={() => closeNav(false)}>
           {!closeNav ? <FaBars/> : <FaTimes/>}
-        </close>
+        </div>
 
         <li className="mob-li">Home</li>
         <li className="mob-li">About</li>
