@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaTimes} from 'react-icons/fa';
 const Modal = ({closeNav}) => {
   return (
     <div className="modal-bg">
@@ -7,7 +7,7 @@ const Modal = ({closeNav}) => {
 
       <ul className="mobile">
         <close className="closeBtn" onClick={() => closeNav(false)}>
-          <FaBars />
+          {!closeNav ? <FaBars/> : <FaTimes/>}
         </close>
 
         <li className="mob-li">Home</li>
