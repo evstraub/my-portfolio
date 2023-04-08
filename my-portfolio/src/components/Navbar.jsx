@@ -5,6 +5,8 @@ import { useState } from 'react'
 import Modal from './Modal'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+import {Link} from "react-scroll";
+
 
 const Navbar = () => {
     const [nav, setNav] =useState(false)
@@ -14,10 +16,27 @@ const Navbar = () => {
       {/* menu */}
       <div className="menu-wrapper">
         <ul className="menu">
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li>
+            <Link to="home" smooth={true} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="about" smooth={true} duration={500}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="projects" smooth={true} duration={500}>
+              Projects
+            </Link>
+          </li>
+          <li>
+            
+            <Link to="contact" smooth={true} duration={500}>
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
 
@@ -27,8 +46,7 @@ const Navbar = () => {
         {nav && <Modal closeNav={setNav} />}
       </div>
 
-      
-      <div className="soc-icons">
+      {/* <div className="soc-icons">
         <ul>
           <li className="soc-li">
             <a href="/">
@@ -51,7 +69,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }

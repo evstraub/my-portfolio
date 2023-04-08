@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
-
+@import url("https://db.onlinewebfonts.com/c/419f9a909ea75fd5eb1d85a9a8a349f0?family=Legothick");
 body {
   font-family: "IBM Plex Mono", monospace;
+  font-family: "Legothick";
 }
