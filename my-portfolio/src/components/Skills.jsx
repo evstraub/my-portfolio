@@ -4,7 +4,7 @@ import "../App.css";
 const Skills = () => {
   return (
     <div className="skills">
-      <h4 className="skills-title">skills</h4>
+   
 <div className="skill-outer">
     
           <div className="shrink1">

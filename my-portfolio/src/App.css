@@ -14,8 +14,7 @@
   visibility: hidden;
 }
 .menu li:hover {
-  background-color: #f2f3ae;
-  box-shadow: 2px 2px 3px 1px #edd382;
+  background-color: #ff521b;
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;
 }
@@ -147,45 +146,51 @@
   transition-timing-function: ease-out;
 }
 .about {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #020122;
   color: #6fcb9f;
   font-family: "IBM Plex Mono", monospace;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
-.about-cont {
+/* .about-cont {
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: space-between;
   align-items: left;
-  width: 100%;
-  height: 100vh;
-  padding: 20px;
-}
+  width: 400px;
+  height: 400px;
+
+  background-color: #edd382;
+} */
 .pdiv {
   max-width: 600px;
   line-height: normal;
   font-size: larger;
   padding-bottom: 40px;
+  margin-top: 60px;
+  display: flex;
+}
+.skills-div {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  margin-right: 50px;
 }
 .about-title {
   font-weight: bold;
   font-size: 40px;
   padding: 20px;
-  display: flex;
-  justify-content: left;
+  width: 50px;
+  padding-bottom: 400px;
 }
 .lego {
   color: yellow;
   font-family: "Legothick";
 }
-.skills {
-  width: 100%;
-  height: 100vh;
-  background-color: #020122;
-  color: #6fcb9f;
-  font-family: "IBM Plex Mono", monospace;
-}
+
 .skill-outer {
   background-color: #020122;
   display: flex;
@@ -196,8 +201,11 @@
 .skill-cont {
   border-radius: 8px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  background-color: #6565778e;
+  background-color: #020122;
   padding: 2px;
+}
+.skill-cont:hover {
+  background-color: #515151;
 }
 .shrink1 {
   display: flex;
@@ -233,8 +241,13 @@
   font-weight: bold;
   font-size: 40px;
   padding: 20px;
+  padding-top: 100px;
   display: flex;
   justify-content: left;
+  background-color: #020122;
+  color: #6fcb9f;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #020122;
 }
 .contact {
   width: 100%;
@@ -248,20 +261,22 @@
 }
 .contact-form {
   width: 500px;
-  background-color: #6fcb9f;
+  background-color: #020122;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 40px;
 }
 .inner-form {
-  background-color: #ff521b;
+  background-color: #515151;
   width: 400px;
   height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  border: #6fcb9f 5px solid;
   gap: 20px;
 }
 .namesubmit {
@@ -283,8 +298,9 @@ textarea {
   font-weight: bold;
   font-size: 40px;
   padding: 20px;
+  padding-top: 100px;
   display: flex;
-  justify-content: right;
+  justify-content: left;
   background-color: #020122;
   color: #6fcb9f;
   font-family: "IBM Plex Mono", monospace;
@@ -317,10 +333,22 @@ textarea {
     justify-content: right;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1220px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
   .pdiv {
     max-width: 460px;
+    min-width: fit-content;
   }
+  .skill-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1600px) {
   .skill-outer {
     display: flex;
     flex-direction: column;
