@@ -1,11 +1,13 @@
 import '../App.css'
 import '../reset.css'
-import {FaBars, FaGithub, FaLinkedin} from 'react-icons/fa'
+import {FaBars } from 'react-icons/fa'
 import { useState } from 'react'
 import Modal from './Modal'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {Link} from "react-scroll";
+import DarkMode from './Darkmode'
+
 
 
 const Navbar = () => {
@@ -16,25 +18,26 @@ const Navbar = () => {
       {/* menu */}
       <div className="menu-wrapper">
         <ul className="menu">
+         
           <li>
             <Link to="home" smooth={true} duration={500}>
-              Home
+              HOME
             </Link>
           </li>
           <li>
             <Link to="about" smooth={true} duration={500}>
-              About
+              ABOUT
             </Link>
           </li>
           <li>
             <Link to="projects" smooth={true} duration={500}>
-              Projects
+              PROJECTS
             </Link>
           </li>
           <li>
             
             <Link to="contact" smooth={true} duration={500}>
-              Contact
+              CONTACT
             </Link>
           </li>
         </ul>
