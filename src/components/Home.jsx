@@ -9,14 +9,8 @@ const Home = () => {
       <div className="container">
        
         <div>
-          <button className="lookBtn">
-          <Link to="projects" smooth={true} duration={500}>
-              PROJECTS
-            </Link>
-            <span>
-              <HiArrowNarrowRight />
-            </span>
-          </button>
+        <p>ETHAN STRAUB</p>
+        <p>WEB DEVELOPER</p>
         </div>
       </div>
     </div>
