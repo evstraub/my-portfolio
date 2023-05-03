@@ -14,6 +14,53 @@
   font-family: var(--font-family);
   background-color: var(--background-color);
 }
+.Ethan{
+  font-size: 100px;
+  font-weight: bold;
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count:initial;
+  min-height: 100px;
+
+}
+.webdev{
+  font-size: large;
+  font-weight: bold;
+  animation-duration: 2s;
+  animation-name: slideinright;
+  animation-iteration-count:initial;
+  min-height: 100px;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes slideinright {
+  from {
+   transform: translateX(-100%);
+  }
+
+  to {
+ transform:  translate(0%);
+   
+  }
+}
+@keyframes fadein {
+  from {
+   opacity: 0;
+  }
+
+  to {
+opacity: 100%;   
+  }
+}
 
 .menu {
   visibility: hidden;
@@ -63,7 +110,16 @@
   font-family: var(--font-family);
 
 }
-
+.home-btn{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right:    50%;
+  bottom:   0;
+  animation-duration: 5s;
+  animation-name: fadein;
+  animation-iteration-count:initial;
+}
 .container {
   max-width: 100vw;
   margin: auto;
@@ -82,7 +138,9 @@
   display: flex;
   justify-content: space-between;
   font-family: var(--font-family);
-
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count:inherit;
 }
 
 .about-title {

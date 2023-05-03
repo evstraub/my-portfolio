@@ -18,7 +18,8 @@ const Navbar = () => {
       {/* menu */}
       <div className="menu-wrapper">
         <ul className="menu">
-         
+        <DarkMode/>
+
           <li>
             <Link to="home" smooth={true} duration={500}>
               HOME

@@ -30,7 +30,6 @@
     flex-direction: row;
     align-items: center;
     gap: 4px;
-    padding: 20px;
   }
   
   .toggle-theme-wrapper span {
