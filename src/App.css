@@ -13,11 +13,12 @@
   color:var(--head-color);
   font-family: var(--font-family);
   background-color: var(--background-color);
+  z-index: 10;
 }
 .Ethan{
   font-size: 100px;
   font-weight: bold;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: slidein;
   animation-iteration-count:initial;
   min-height: 100px;
@@ -26,7 +27,7 @@
 .webdev{
   font-size: large;
   font-weight: bold;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: slideinright;
   animation-iteration-count:initial;
   min-height: 100px;
