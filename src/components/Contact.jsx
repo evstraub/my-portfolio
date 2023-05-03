@@ -1,10 +1,12 @@
 import React from 'react'
 import "../App.css";
-
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 const Contact = () => {
   return (
     <div>
-      <h6 className="contact-title">CONTACT ME</h6>
+      
+      <AnimationOnScroll animateIn='animate__fadeIn'>
+<h6 className="contact-title"> GET IN TOUCH</h6> </AnimationOnScroll>
       <form   name='contact' method='POST' action="https://getform.io/f/96304d5d-31c3-4bb1-bc5d-f3c05dd0d188">
         
         <div className="contact">
