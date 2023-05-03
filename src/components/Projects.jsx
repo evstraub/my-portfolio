@@ -9,9 +9,9 @@ const Projects= () => {
   return (
     <>
       <h5 name='projects'className="projects-title">MY PROJECTS</h5>
-<div className='projects-grid'>
+<div className='projects'>
 <div class="div1">
-  <div class="in1"><img src={postit} style={{width:'25rem', height:"auto", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}}></img> </div>
+  <div class="in1"><img src={postit} style={{width:'25rem', height:"auto", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}} alt='postit'></img> </div>
   <div class="in1">
     <h1 style={{fontSize:'40px', fontWeight:'bold', padding:'5px'}}>POST-IT</h1>
     <p style={{padding:'5px'}}> Used  React Hooks to mount custom notes to the page
@@ -35,11 +35,11 @@ const Projects= () => {
     <button>DEMO</button>  <button>CODE</button>
 </div>
   </div>
-  <div class="in2"><img src={blog} style={{width:'25rem', height:"auto",boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}}></img> </div>
+  <div class="in2"><img src={blog} style={{width:'25rem', height:"auto",boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}}alt='blog'></img> </div>
 </div>
 
 <div class="div3">
-  <div class="in3"><img src={direct} style={{width:'25rem', height:"auto", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}}></img> </div>
+  <div class="in3"><img src={direct} style={{width:'25rem', height:"auto", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}}alt='directory'></img> </div>
   <div class="in3">
     <h1 style={{fontSize:'40px', fontWeight:'bold', padding:'5px'}}>DIRECTORY</h1>
     <p style={{padding:'5px'}}> Implemented MongoDB with Mongoose to locally store data on a table 

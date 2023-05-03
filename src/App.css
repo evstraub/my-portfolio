@@ -135,17 +135,24 @@ cursor: pointer;
   color:var(--head-color);
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   font-family: var(--font-family);
+  line-height: 1.6;
+    letter-spacing: 1.5px
  
 }
-
+.innerDivAbt
+{width: 50rem;
+  font-size: x-large;
+   padding: 20px; 
+   color: var(--link-color)
+  }
 .about-title {
   font-weight: bold;
   font-size: 40px;
   padding: 20px;
-  width: 50px;
-  padding-bottom: 400px;
+  width: fit-content;
   font-family: var(--font-family);
 
 }
@@ -162,7 +169,7 @@ cursor: pointer;
   font-family: var(--font-family);
 
 }
-.projects-grid{
+.projects{
   height: auto;
    width: 100vw;
    display: flex;
@@ -173,7 +180,6 @@ cursor: pointer;
    font-size: x-large;
    line-height: 120%;
    color:var(--head-color);
- 
 
  }
  img{
@@ -238,14 +244,19 @@ flex-direction: column;
   flex-direction: column;
 }
 
-button{
+.projects button{
   border: none;
   border-radius: 4px;
   font-size: 20px;
   font-family: var(--font-family);
   background: var(--head-color)
 }
-
+.about button {
+  border: none;
+  color: var(--link-color);
+  background: var(--background-color);
+  padding: 40px;
+}
 
 
 
