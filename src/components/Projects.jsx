@@ -1,5 +1,10 @@
 import React from 'react'
 import '../App.css'
+import postit from '../imgs/notes.png'
+import direct from '../imgs/directory.png'
+import blog from '../imgs/blogapp.png'
+
+
 const Projects= () => {
   return (
     <>
@@ -7,7 +12,7 @@ const Projects= () => {
       <div className="projects">
 <div className='projects-grid'>
 <div class="div1">
-  <div class="in1">Picture </div>
+  <div class="in1"><img src={postit} style={{width:'25rem', height:"auto"}}></img> </div>
   <div class="in1">
     <h1 style={{fontSize:'40px', fontWeight:'bold', padding:'5px'}}>POST-IT</h1>
     <p style={{padding:'5px'}}> Used  React Hooks to mount custom notes to the page</p> 
@@ -30,11 +35,11 @@ const Projects= () => {
     <button>DEMO</button>  <button>CODE</button>
 </div>
   </div>
-  <div class="in2">Picture </div>
+  <div class="in2"><img src={blog} style={{width:'25rem', height:"auto"}}></img> </div>
 </div>
 
 <div class="div3">
-  <div class="in3">Picture </div>
+  <div class="in3"><img src={direct} style={{width:'25rem', height:"auto"}}></img> </div>
   <div class="in3">
     <h1 style={{fontSize:'40px', fontWeight:'bold', padding:'5px'}}>DIRECTORY</h1>
     <p style={{padding:'5px'}}> Implemented MongoDB with Mongoose to locally store data on a table</p> 
