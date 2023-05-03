@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App.css'
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, } from '@fortawesome/free-solid-svg-icons'
 
 import { Link } from 'react-scroll'
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
         </div>
         <div className="home-btn">
         <Link to="about" smooth={true} duration={500}>
-        <FontAwesomeIcon icon={faChevronDown} fade size='lg' style={{color: "#ef233c", padding: '15px'} }  />
+        <FontAwesomeIcon icon={faChevronDown} fade size='2xl' style={{color: "#ef233c", padding: '15px'} }  />
             </Link>
        
       </div>

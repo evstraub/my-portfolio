@@ -22,10 +22,11 @@
   animation-name: slidein;
   animation-iteration-count:initial;
   min-height: 100px;
+  padding-bottom: 10px;
 
 }
 .webdev{
-  font-size: large;
+  font-size: 50px;
   font-weight: bold;
   animation-duration: 1s;
   animation-name: slideinright;
