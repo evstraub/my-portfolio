@@ -21,8 +21,9 @@ const Projects= () => {
   with options delete and search for notes in the grid.</p>
   <p style={{padding:'10px', fontWeight: '600'}}>BUILT WITH:</p>
   <div> icons here</div>
-  <div>
-    <button>DEMO</button>  <button>CODE</button>
+  <div style={{display: 'flex', padding:'20px', justifyContent:'center', gap: '50px'}}>
+    <a href='https://post-it-evs.netlify.app/'><button>DEMO</button></a>
+    <a href='https://github.com/evstraub/post-it-note-app'><button>CODE</button></a>
 </div>
   </div>
 </div>  
@@ -36,8 +37,9 @@ const Projects= () => {
  
  <p style={{padding:'10px', fontWeight: '600'}}>BUILT WITH:</p>
   <div> icons here</div>
-  <div>
-    <button>DEMO</button>  <button>CODE</button>
+  <div style={{display: 'flex', padding:'20px', justifyContent:'center', gap: '50px'}}>
+  <a href='#'><button>DEMO</button></a>
+    <a href='https://github.com/evstraub/blog-app'><button>CODE</button></a>
 </div>
   </div>
   <div class="in2"><img src={blog} style={{width:'25rem', height:"auto",boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}}alt='blog'></img> </div>
@@ -53,8 +55,9 @@ const Projects= () => {
   built out with ejs. Theres options to add, edit and delete users directly from the database using a custom form.</p>
   <p style={{padding:'10px', fontWeight: '600'}}>BUILT WITH:</p>
   <div> icons here</div>
-  <div>
-    <button>DEMO</button>  <button>CODE</button>
+  <div style={{display: 'flex', padding:'20px', justifyContent:'center', gap: '50px'}}>
+  <a href='#'><button>DEMO</button></a>
+    <a href='https://github.com/evstraub/CRUDapp'><button>CODE</button></a>
 </div>
   </div>
 </div>

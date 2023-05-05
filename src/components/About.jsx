@@ -3,6 +3,7 @@ import '../App.css'
 import ethan from "../imgs/HAZER_9.JPEG"
 import {AiFillGithub, AiFillLinkedin,AiFillMail, AiFillFilePdf} from 'react-icons/ai'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { Link } from 'react-scroll';
 const About = () => {
   return (
    <>
@@ -16,9 +17,9 @@ const About = () => {
     <p>Hey! I'm Ethan, I'm a front end developer currently based near Ann Arbor Michigan. </p>
       <p>For the past year I have been learning and creating interactive and user friendly applications and sites.   </p>
       <p style={{ display: "flex", justifyContent: "center"}}>
-            <button><AiFillGithub style={{width: 'auto', height: "50px"}}/> </button>
-            <button><AiFillLinkedin style={{width: 'auto', height: "50px"}}/></button>
-            <button><AiFillMail style={{width: 'auto', height: "50px"}}/></button>
+            <a href="https://github.com/evstraub"><button><AiFillGithub style={{width: 'auto', height: "50px"}}/> </button></a>
+            <a href="https://www.linkedin.com/in/ethan-straub-11a248247/"><button><AiFillLinkedin style={{width: 'auto', height: "50px"}}/></button></a>
+            <Link to="contact" smooth={true} duration={500}><button><AiFillMail style={{width: 'auto', height: "50px"}}/></button></Link>
             <button><AiFillFilePdf style={{width: 'auto', height: "50px"}}/></button>
           </p>
    </div>
