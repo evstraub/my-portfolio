@@ -9,10 +9,10 @@ const About = () => {
    <>
    
    <div name="about" className="about" >
- <AnimationOnScroll animateIn="animate__fadeInRightBig">
+ <AnimationOnScroll animateIn="animate__fadeIn">
  <h3 className="about-title" >ABOUT</h3></AnimationOnScroll>
- <AnimationOnScroll animateIn='animate__fadeInLeft'>
- <div  data-aos="fade-up" style={{ width:'75rem', height:"50vh", display:'flex', alignItems: "center", justifyContent: "center"}}>
+ <AnimationOnScroll animateIn='animate__fadeIn'>
+ <div className='fadeAbt' data-aos="fade-up" >
    <div className="innerDivAbt">
     <p>Hey! I'm Ethan, I'm a front end developer currently based near Ann Arbor Michigan. </p>
       <p>For the past year I have been learning and creating interactive and user friendly applications and sites.   </p>

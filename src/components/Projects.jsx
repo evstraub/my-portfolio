@@ -30,6 +30,23 @@ const Projects= () => {
 </AnimationOnScroll>
 <AnimationOnScroll animateIn='animate__fadeIn'>
 <div class="div2">
+<div class="in2"><img src={blog} style={{width:'25rem', height:"auto",boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}}alt='blog'></img> </div>
+  <div class="in2">
+    <h1 style={{fontSize:'40px', fontWeight:'bold', padding:'5px'}}>BLOG</h1>
+    <p style={{padding:'5px'}}> Used React Hooks to mount custom blog entries to the page
+  with a form section. Also has options delete and search for posts.</p>
+ 
+ <p style={{padding:'10px', fontWeight: '600'}}>BUILT WITH:</p>
+  <div> icons here</div>
+  <div style={{display: 'flex', padding:'20px', justifyContent:'center', gap: '50px'}}>
+  <a href='#'><button>DEMO</button></a>
+    <a href='https://github.com/evstraub/blog-app'><button>CODE</button></a>
+</div>
+  </div>
+ 
+</div>
+<div class="flip2">
+
   <div class="in2">
     <h1 style={{fontSize:'40px', fontWeight:'bold', padding:'5px'}}>BLOG</h1>
     <p style={{padding:'5px'}}> Used React Hooks to mount custom blog entries to the page

@@ -18,9 +18,6 @@
 .Ethan{
   font-size: 100px;
   font-weight: bold;
-  animation-duration: 1s;
-  animation-name: slidein;
-  animation-iteration-count:initial;
   min-height: 100px;
   padding-bottom: 10px;
 
@@ -28,41 +25,9 @@
 .webdev{
   font-size: 50px;
   font-weight: bold;
-  animation-duration: 1s;
-  animation-name: slideinright;
-  animation-iteration-count:initial;
   min-height: 100px;
 }
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; 
-  }
 
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-@keyframes slideinright {
-  from {
-   transform: translateX(-100%);
-  }
-
-  to {
- transform:  translate(0%);
-   
-  }
-}
-@keyframes fadein {
-  from {
-   opacity: 0;
-  }
-
-  to {
-opacity: 100%;   
-  }
-}
 
 .menu {
   visibility: hidden;
@@ -114,7 +79,7 @@ cursor: pointer;
   display: flex;
   justify-content: center;
   position: absolute;
-  right:    50%;
+  right:    48%;
   bottom:   0;
   animation-duration: 5s;
   animation-name: fadein;
@@ -148,7 +113,15 @@ cursor: pointer;
 {width: 50rem;
   font-size: x-large;
    padding: 20px; 
-   color: var(--link-color)
+   color: var(--link-color);
+  }
+
+  .fadeAbt{
+   width:75rem;
+  height:50vh;
+   display:flex;
+ align-items: center;
+justify-content: center;
   }
 .about-title {
   font-weight: bold;
@@ -177,7 +150,6 @@ cursor: pointer;
    display: flex;
    flex-direction: column;
    align-items: center;
-   gap: 100px;
    font-family: var(--font-family);
    font-size: x-large;
    line-height: 120%;
@@ -199,6 +171,7 @@ cursor: pointer;
   justify-content: center;
   padding: 50px;
   border-radius: 15px;
+  margin-bottom: 100px;
 
  }
 
@@ -210,6 +183,7 @@ cursor: pointer;
   justify-content: center;
   border-radius: 15px;
   padding: 50px;
+  margin-bottom: 100px;
 
 }
 
@@ -221,6 +195,8 @@ cursor: pointer;
   justify-content: center;
   border-radius: 15px;
   padding: 50px;
+  margin-bottom: 100px;
+
 }
 .in1{
 width: 100vw;
@@ -229,6 +205,7 @@ color: var(--link-color);
 display: flex;
 justify-content: center;
 flex-direction: column;
+padding: 50px;
 }
 
 .in2{
@@ -238,6 +215,8 @@ flex-direction: column;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 50px;
+
 }
 .in3{
   width: 100vw;
@@ -246,6 +225,8 @@ flex-direction: column;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 50px;
+
 }
 
 .projects button{
@@ -332,7 +313,16 @@ textarea {
   font-family: var(--font-family);
 
 }
-
+.flip2{
+  height: 250px;
+  width: 50vw; 
+  background-color: var(--background-color);    display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 50px;
+  margin-bottom: 100px; 
+}
 @media (min-width: 800px) {
   .menu {
     display: flex;
@@ -348,7 +338,7 @@ textarea {
     align-items: right;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 799px) {
   .hamburger {
     visibility: visible;
   }
@@ -356,13 +346,59 @@ textarea {
     display: flex;
     justify-content: right;
   }
-}
+ .about-title{
+margin-bottom: 150px;
+ }
+  .fadeAbt{
+    flex-direction: column;
+  }
 
-
-@media (max-width: 1600px) {
-  .skill-outer {
+  .innerDivAbt {
+    width: 700px;
+  }
+  .projects-title{
+    margin-top: 100px;
+  }
+  .home-btn{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right:    45%;
+    bottom:   0;
+    animation-duration: 5s;
+    animation-name: fadein;
+    animation-iteration-count:initial;
+    cursor: pointer;
+  }
+  .div1, .div2 ,.div3{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
+ p {
+  padding: 20px;
+ }
+  .projects-title{
+    margin-bottom: 150px;
+    margin-top: 150px;
+  }
+  .in1,.in2,.in3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+  }
+.flip2{
+display: none;
 }
+}
+@media (min-width: 800px) {
+.div2{
+display: none;}
+
+
+}
+ 

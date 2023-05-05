@@ -4,6 +4,7 @@ import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, } from '@fortawesome/free-solid-svg-icons'
 
 import { Link } from 'react-scroll'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 const Home = () => {
   return (
     <div name="home" className="home">
